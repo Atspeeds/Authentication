@@ -1,0 +1,15 @@
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\bin\Debug\net5.0\StoreManager.Application.Contract.deps.json
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\bin\Debug\net5.0\StoreManager.Application.Contract.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\bin\Debug\net5.0\StoreManager.Application.Contract.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\bin\Debug\net5.0\01_Framework.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\bin\Debug\net5.0\01_Framework.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.AssemblyInfo.cs
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.csproj.CopyComplete
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\refint\StoreManager.Application.Contract.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\StoreManager.Application.Contract.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Application.Contract\obj\Debug\net5.0\ref\StoreManager.Application.Contract.dll

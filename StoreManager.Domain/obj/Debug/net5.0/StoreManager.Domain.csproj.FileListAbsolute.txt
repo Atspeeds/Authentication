@@ -1,0 +1,17 @@
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\StoreManager.Domain.deps.json
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\StoreManager.Domain.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\StoreManager.Domain.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\01_Framework.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\StoreManager.Application.Contract.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\01_Framework.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\bin\Debug\net5.0\StoreManager.Application.Contract.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.AssemblyInfo.cs
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.csproj.CopyComplete
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\refint\StoreManager.Domain.dll
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\StoreManager.Domain.pdb
+C:\Users\A\source\repos\AuthenticationApp\StoreManager.Domain\obj\Debug\net5.0\ref\StoreManager.Domain.dll
