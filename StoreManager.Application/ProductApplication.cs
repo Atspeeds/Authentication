@@ -10,9 +10,12 @@ namespace StoreManager.Application
 
         private readonly IProductRepository _productRepository;
 
-        public ProductApplication(IProductRepository productRepository)
+        private readonly IFileUploader _fileUploader;
+
+        public ProductApplication(IProductRepository productRepository, IFileUploader fileUploader)
         {
             _productRepository = productRepository;
+            _fileUploader = fileUploader;
         }
 
         public ActionResponse Create(CreateProduct command)
@@ -23,7 +26,9 @@ namespace StoreManager.Application
             if (_productRepository.Exists(x => x.Name == command.Name))
                 return response.Failed(ServiceMessage.DuplicateRecord);
 
-            var product = new Product(command.Name, command.Picture,
+            var filename = _fileUploader.Upload(command.Picture, "Products");
+
+            var product = new Product(command.Name, filename,
                 command.Description, command.ShortDescription,
                  command.Code);
 
@@ -46,7 +51,9 @@ namespace StoreManager.Application
             if (_productRepository.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 response.Failed(ServiceMessage.DuplicateRecord);
 
-            product.Edit(command.Name, command.Picture, command.Description,
+            var filename = _fileUploader.Upload(command.Picture, "Products");
+
+            product.Edit(command.Name, filename, command.Description,
                 command.ShortDescription, command.Code);
 
             _productRepository.Save();

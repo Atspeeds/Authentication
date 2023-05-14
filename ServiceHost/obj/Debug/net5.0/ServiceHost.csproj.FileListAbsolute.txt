@@ -84,3 +84,11 @@ C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\ServiceHo
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Humanizer.dll
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Index.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\_AdminViewStart.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\Product\Index.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\Product\Create.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\Product\Edit.cshtml.g.cs

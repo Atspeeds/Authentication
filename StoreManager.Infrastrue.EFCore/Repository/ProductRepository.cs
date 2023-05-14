@@ -1,4 +1,5 @@
-﻿using _01_Framework.Infrastrue;
+﻿using _01_Framework.Application;
+using _01_Framework.Infrastrue;
 using Microsoft.EntityFrameworkCore;
 using StoreManager.Application.Contract.Product;
 using StoreManager.Domain.ProductAgg;
@@ -25,7 +26,7 @@ namespace StoreManager.Infrastrue.EFCore.Repository
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Picture = x.Picture,
+                    PictureName = x.Picture,
                     Description = x.Description,
                     ShortDescription = x.ShortDescription,
                     Code = x.Code,
@@ -40,17 +41,19 @@ namespace StoreManager.Infrastrue.EFCore.Repository
                 .Select(x => new ProductViewModel()
                 {
                     Id = x.Id,
-                    Name = x.Name,
+                    Name = x.Name.FixViewText(),
+                    Picture=x.Picture,
                     Code = x.Code,
                     Description = x.Description,
-                    CreationDate = x.CreationDate.ToString(),
+                    CreationDate = x.CreationDate.ToFarsi(),
                     ShortDescription = x.ShortDescription,
+                    
                 });
 
             if(!string.IsNullOrWhiteSpace(search.Name))
                 Query=Query.Where(x=>x.Name.Contains(search.Name));
 
-            if (string.IsNullOrWhiteSpace(search.Code))
+            if (!string.IsNullOrWhiteSpace(search.Code))
                 Query = Query.Where(x => x.Code == search.Code);
 
 

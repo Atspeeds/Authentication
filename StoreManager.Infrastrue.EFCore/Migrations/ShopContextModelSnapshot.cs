@@ -19,6 +19,32 @@ namespace StoreManager.Infrastrue.EFCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
+            modelBuilder.Entity("StoreManager.Domain.InventoryAgg.Inventory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsInStock")
+                        .HasColumnType("bit");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Inventories");
+                });
+
             modelBuilder.Entity("StoreManager.Domain.ProductAgg.Product", b =>
                 {
                     b.Property<long>("Id")
@@ -53,6 +79,54 @@ namespace StoreManager.Infrastrue.EFCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("StoreManager.Domain.InventoryAgg.Inventory", b =>
+                {
+                    b.HasOne("StoreManager.Domain.ProductAgg.Product", "Product")
+                        .WithMany("Inventories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsMany("StoreManager.Domain.InventoryAgg.InventoryOpration", "Oprations", b1 =>
+                        {
+                            b1.Property<long>("InvantoryId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<int>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("int")
+                                .UseIdentityColumn();
+
+                            b1.Property<int>("Count")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("Description")
+                                .HasMaxLength(500)
+                                .HasColumnType("nvarchar(500)");
+
+                            b1.Property<bool>("ServiceInput")
+                                .HasColumnType("bit");
+
+                            b1.HasKey("InvantoryId", "Id");
+
+                            b1.ToTable("InventoryOpration");
+
+                            b1.WithOwner("inventory")
+                                .HasForeignKey("InvantoryId");
+
+                            b1.Navigation("inventory");
+                        });
+
+                    b.Navigation("Oprations");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("StoreManager.Domain.ProductAgg.Product", b =>
+                {
+                    b.Navigation("Inventories");
                 });
 #pragma warning restore 612, 618
         }

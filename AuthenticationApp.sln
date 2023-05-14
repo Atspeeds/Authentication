@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM-Application", "SM-Applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM-Infrastrue", "SM-Infrastrue", "{7FDF1F41-9B62-48A0-808B-3282FCF89C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManager.Domain", "StoreManager.Domain\StoreManager.Domain.csproj", "{B1C2B4F6-0316-47D9-99A9-4D14A9D330E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreManager.Domain", "StoreManager.Domain\StoreManager.Domain.csproj", "{B1C2B4F6-0316-47D9-99A9-4D14A9D330E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManager.Application.Contract", "StoreManager.Application.Contract\StoreManager.Application.Contract.csproj", "{EA3FC921-3824-4A7A-BDE2-21EE869AA554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreManager.Application.Contract", "StoreManager.Application.Contract\StoreManager.Application.Contract.csproj", "{EA3FC921-3824-4A7A-BDE2-21EE869AA554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManager.Application", "StoreManager.Application\StoreManager.Application.csproj", "{EE7EDE50-1796-4C9D-88DE-E35540E25EB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreManager.Application", "StoreManager.Application\StoreManager.Application.csproj", "{EE7EDE50-1796-4C9D-88DE-E35540E25EB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManager.Infrastrue.EFCore", "StoreManager.Infrastrue.EFCore\StoreManager.Infrastrue.EFCore.csproj", "{B73A1D67-1102-4AE7-9C93-9AE6E7AA1E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreManager.Infrastrue.EFCore", "StoreManager.Infrastrue.EFCore\StoreManager.Infrastrue.EFCore.csproj", "{B73A1D67-1102-4AE7-9C93-9AE6E7AA1E1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManager.Infrastrue.Configurations", "StoreManager.Infrastrue.Configurations\StoreManager.Infrastrue.Configurations.csproj", "{4EB05332-1D64-45FF-A02D-F6D997922689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreManager.Infrastrue.Configurations", "StoreManager.Infrastrue.Configurations\StoreManager.Infrastrue.Configurations.csproj", "{4EB05332-1D64-45FF-A02D-F6D997922689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Framework", "01_Framework\01_Framework.csproj", "{E9A8C269-1CC3-4264-98AA-01FB942FADD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Framework", "01_Framework\01_Framework.csproj", "{E9A8C269-1CC3-4264-98AA-01FB942FADD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{5DD8BD22-BFC4-4D77-89D6-F9303511B7F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{5DD8BD22-BFC4-4D77-89D6-F9303511B7F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
