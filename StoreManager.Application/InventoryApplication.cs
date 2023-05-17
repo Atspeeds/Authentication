@@ -33,9 +33,81 @@ namespace StoreManager.Application
 
         }
 
+        public ActionResponse Edit(EditInventory command)
+        {
+            ActionResponse response = new ActionResponse();
+
+            var inventory = _inventoryRepository.Get(command.id);
+
+            if (inventory == null) return response.Failed(ServiceMessage.NoRecordFound);
+
+
+            if (_inventoryRepository.Exists(x => x.Id != command.id))
+                return response.Failed(ServiceMessage.DuplicateRecord);
+
+
+            inventory.Edit(command.Price);
+
+            _inventoryRepository.Save();
+
+            return response.Success();
+        }
+
+        public long CurrentCount(long id)
+        {
+            var inventory = _inventoryRepository.Get(id);
+
+            return inventory.CurrentCount();
+        }
+
+        public ActionResponse Decrease(DecreaseInventory command)
+        {
+            ActionResponse response = new ActionResponse();
+
+            if (command.Count <= 0) return response.Failed(ServiceMessage.NumberLimit);
+
+            long character = 1;
+
+            var inventory = _inventoryRepository.Get(command.InvantoryId);
+
+            if (inventory == null) return response.Failed(ServiceMessage.NoRecordFound);
+
+            inventory.ExpelIntoWarehouse(command.Count, character, command.Description);
+
+            _inventoryRepository.Save();
+
+            return response.Success();
+        }
+
+        public ActionResponse Increase(IncreaseInventory command)
+        {
+            ActionResponse response = new ActionResponse();
+
+            if (command.Count <= 0) return response.Failed(ServiceMessage.NumberLimit);
+
+            long character = 1;
+
+            var inventory = _inventoryRepository.Get(command.InvantoryId);
+
+            if (inventory == null) return response.Failed(ServiceMessage.NoRecordFound);
+
+            inventory.ImportIntoWarehouse(command.Count, character, command.Description);
+
+            _inventoryRepository.Save();
+
+            return response.Success();
+
+        }
+
         public List<InventoryViewModel> Search(SearchInventory search)
         {
             return _inventoryRepository.Search(search);
         }
+
+        public EditInventory GetDetails(long id)
+        {
+           return _inventoryRepository.Details(id);
+        }
+
     }
 }

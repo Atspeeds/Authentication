@@ -28,11 +28,11 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
             return Partial("./Create");
         }
 
-        public JsonResult OnPostCreate(CreateProduct command)
+        public IActionResult OnPostCreate(CreateProduct command)
         {
             var resualt = _productApplication.Create(command);
 
-            return new JsonResult(resualt.Message);
+            return RedirectToPage("/Index");
         }
 
 
@@ -42,10 +42,10 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
             return Partial("./Edit", product);
         }
 
-        public JsonResult OnPostEdit(EditProduct command)
+        public IActionResult OnPostEdit(EditProduct command)
         {
             var product = _productApplication.Edit(command);
-            return new JsonResult(product.Message);
+            return RedirectToPage("/Index");
         }
 
     }

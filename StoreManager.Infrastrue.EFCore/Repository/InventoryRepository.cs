@@ -16,24 +16,36 @@ namespace StoreManager.Infrastrue.EFCore.Repository
             _shopContext = context;
         }
 
+        public EditInventory Details(long id)
+        {
+            return _shopContext.Inventories
+                .Include(p => p.Product)
+                .Select(x => new EditInventory()
+                {
+                    id = x.Id,
+                    Price = x.Price,
+                    Product = x.Product.Name,
+                }).FirstOrDefault(x => x.id == id);
+
+        }
 
         public List<InventoryViewModel> Search(SearchInventory search)
         {
             var query = _shopContext.Inventories.Include(p => p.Product)
                 .Select(x => new InventoryViewModel()
                 {
-                    Id=x.Id,
+                    Id = x.Id,
                     Price = x.Price,
                     Product = x.Product.Name,
                     IsInStock = x.IsInStock,
-                    ProductId=x.ProductId
+                    ProductId = x.ProductId
                 });
 
             if (search.ProductId > 0)
                 query = query.Where(x => x.ProductId == search.ProductId);
 
 
-            return query.OrderByDescending(x=>x.Id).ToList();
+            return query.OrderByDescending(x => x.Id).ToList();
 
         }
     }

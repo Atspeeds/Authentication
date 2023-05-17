@@ -6,7 +6,7 @@
 
         public const string NoRecordFound = "متاسفانه رکوردی پیدا نشد";
 
-
+        public const string NumberLimit = "مقدار وارد شده صحیح نیست";
 
     }
 }

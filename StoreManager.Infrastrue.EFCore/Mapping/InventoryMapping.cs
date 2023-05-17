@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using StoreManager.Domain.InventoryAgg;
+using System.Security.Cryptography.X509Certificates;
 
 namespace StoreManager.Infrastrue.EFCore.Mapping
 {
@@ -19,6 +20,7 @@ namespace StoreManager.Infrastrue.EFCore.Mapping
 
             builder.OwnsMany(x => x.Oprations, ModelBulder =>
             {
+                ModelBulder.HasKey(x=> x.Id);
                 ModelBulder.Property(x => x.Description).HasMaxLength(500);
                 ModelBulder.WithOwner(x => x.inventory).HasForeignKey(x=>x.InvantoryId);
             });

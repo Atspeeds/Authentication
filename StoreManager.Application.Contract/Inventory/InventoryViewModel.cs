@@ -1,4 +1,7 @@
-﻿namespace StoreManager.Application.Contract.Inventory
+﻿using StoreManager.Application.Contract.Product;
+using System.Collections.Generic;
+
+namespace StoreManager.Application.Contract.Inventory
 {
     public class InventoryViewModel
     {
@@ -7,5 +10,6 @@
         public long ProductId { get; set; }
         public double Price { get; set; }
         public bool IsInStock { get; set; }
+        
     }
 }

@@ -1,0 +1,52 @@
+﻿@model StoreManager.Application.Contract.Inventory.DecreaseInventory
+
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">تعداد موجودی فعلی در انبار (@Model.CurrentCount)</h4>
+</div>
+<form asp-page="./Index" asp-page-handler="Decrease"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Count" class="control-label">تعداد خروج از انبار</label>
+                    <input type="number" class="form-control" asp-for="Count">
+                    <ul class="parsley-errors-list filled" id="parsley-id-32">
+                        <li class="parsley-required">
+                            <span asp-validation-for="Count"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">توضیحات</label>
+                    <br />
+                    <textarea asp-for="Description">
+
+                    </textarea>
+                    <ul class="parsley-errors-list filled" id="parsley-id-32">
+                        <li class="parsley-required">
+                            <span asp-validation-for="Description"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="InvantoryId" value="@Model.InvantoryId" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">کم کردن</button>
+    </div>
+</form>
+

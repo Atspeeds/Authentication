@@ -1,4 +1,4 @@
-﻿@model StoreManager.Application.Contract.Product.CreateProduct
+﻿@model StoreManager.Application.Contract.Inventory.CreateInventory
 
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -13,66 +13,30 @@
       enctype="multipart/form-data">
     <div class="modal-body">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="form-group">
-                    <label asp-for="Name" class="control-label">نام</label>
-                    <input type="text" class="form-control" asp-for="Name" onchange="makeSlug('Name', 'Slug')">
+                    <label asp-for="Price" class="control-label">قیمت</label>
+                    <input type="text" class="form-control" asp-for="Price" onchange="makeSlug('Name', 'Slug')">
                     <ul class="parsley-errors-list filled" id="parsley-id-32">
                         <li class="parsley-required">
-                            <span asp-validation-for="Name"></span>
+                            <span asp-validation-for="Price"></span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="Code" class="control-label">کد</label>
-                    <input type="text" class="form-control" asp-for="Code">
-                    <ul class="parsley-errors-list filled" id="parsley-id-32">
-                        <li class="parsley-required">
-                            <span asp-validation-for="Code"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        
+        </div>
+   
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
 
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label asp-for="Picture" class="control-label">عکس</label>
-                    <input type="file" class="form-control" asp-for="Picture" accept="image/*">
+                    <select asp-for="ProductId" class="form-select form-control" asp-items='new SelectList(Model.products, "Id", "Name")'>
+                        <option value="0">گروه محصولی ...</option>
+                    </select>
                     <ul class="parsley-errors-list filled" id="parsley-id-32">
                         <li class="parsley-required">
-                            <span asp-validation-for="Picture"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group no-margin">
-                    <label asp-for="ShortDescription" class="control-label">توضیحات کوتاه</label>
-                    <textarea class="form-control autogrow" asp-for="ShortDescription" onchange="fillField('ShortDescription', 'MetaDescription')"
-                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
-                    <ul class="parsley-errors-list filled" id="parsley-id-32">
-                        <li class="parsley-required">
-                            <span asp-validation-for="ShortDescription"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group no-margin">
-                    <label asp-for="Description" class="control-label">توضیحات</label>
-                    <textarea class="form-control autogrow" asp-for="Description"
-                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
-                    <ul class="parsley-errors-list filled" id="parsley-id-32">
-                        <li class="parsley-required">
-                            <span asp-validation-for="Description"></span>
+                            <span asp-validation-for="ProductId"></span>
                         </li>
                     </ul>
                 </div>

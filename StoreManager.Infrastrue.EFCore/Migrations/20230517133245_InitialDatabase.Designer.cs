@@ -10,8 +10,8 @@ using StoreManager.Infrastrue.EFCore;
 namespace StoreManager.Infrastrue.EFCore.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    [Migration("20230514185553_InitailInventory")]
-    partial class InitailInventory
+    [Migration("20230517133245_InitialDatabase")]
+    partial class InitialDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -93,25 +93,33 @@ namespace StoreManager.Infrastrue.EFCore.Migrations
 
                     b.OwnsMany("StoreManager.Domain.InventoryAgg.InventoryOpration", "Oprations", b1 =>
                         {
-                            b1.Property<long>("InvantoryId")
-                                .HasColumnType("bigint");
-
-                            b1.Property<int>("Id")
+                            b1.Property<long>("Id")
                                 .ValueGeneratedOnAdd()
-                                .HasColumnType("int")
+                                .HasColumnType("bigint")
                                 .UseIdentityColumn();
 
-                            b1.Property<int>("Count")
-                                .HasColumnType("int");
+                            b1.Property<long>("Character")
+                                .HasColumnType("bigint");
+
+                            b1.Property<long>("Count")
+                                .HasColumnType("bigint");
+
+                            b1.Property<DateTime>("CreationDate")
+                                .HasColumnType("datetime2");
 
                             b1.Property<string>("Description")
                                 .HasMaxLength(500)
                                 .HasColumnType("nvarchar(500)");
 
+                            b1.Property<long>("InvantoryId")
+                                .HasColumnType("bigint");
+
                             b1.Property<bool>("ServiceInput")
                                 .HasColumnType("bit");
 
-                            b1.HasKey("InvantoryId", "Id");
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("InvantoryId");
 
                             b1.ToTable("InventoryOpration");
 

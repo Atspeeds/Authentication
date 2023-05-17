@@ -9,5 +9,6 @@ namespace StoreManager.Application.Contract.Product
         ActionResponse Edit(EditProduct command);
         List<ProductViewModel> Search(SearchProduct search);
         EditProduct GetDetails(long  id);
+        List<ProductViewModel> GetSelectList();
     }
 }

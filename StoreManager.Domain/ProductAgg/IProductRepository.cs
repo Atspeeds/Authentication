@@ -8,6 +8,7 @@ namespace StoreManager.Domain.ProductAgg
     {
         List<ProductViewModel> Search(SearchProduct search);
         EditProduct GetDetails(long id);
+        List<ProductViewModel> SelectList();
 
     }
 }

@@ -66,6 +66,11 @@ namespace StoreManager.Application
             return _productRepository.GetDetails(id);
         }
 
+        public List<ProductViewModel> GetSelectList()
+        {
+            return _productRepository.SelectList();
+        }
+
         public List<ProductViewModel> Search(SearchProduct search)
         {
             return _productRepository.Search(search);
