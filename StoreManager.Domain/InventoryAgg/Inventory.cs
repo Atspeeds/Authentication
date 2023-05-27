@@ -45,7 +45,7 @@ namespace StoreManager.Domain.InventoryAgg
 
             var entry = CurrentCount() + count;
 
-            var opration = new InventoryOpration(Id, count, InventoryServiceInputs.Import, Character, description);
+            var opration = new InventoryOpration(Id, count, InventoryServiceInputs.Import, Character, description,entry);
 
             Oprations.Add(opration);
 
@@ -57,7 +57,7 @@ namespace StoreManager.Domain.InventoryAgg
 
             var Exit = CurrentCount() - count;
 
-            var opration = new InventoryOpration(Id, count, InventoryServiceInputs.TakeOut, Character, description);
+            var opration = new InventoryOpration(Id, count, InventoryServiceInputs.TakeOut, Character, description,Exit);
 
             Oprations.Add(opration);
 

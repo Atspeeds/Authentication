@@ -109,5 +109,9 @@ namespace StoreManager.Application
            return _inventoryRepository.Details(id);
         }
 
+        public List<OprationViewModel> ShowInventoryLog(long id)
+        {
+            return _inventoryRepository.ShowLog(id);
+        }
     }
 }

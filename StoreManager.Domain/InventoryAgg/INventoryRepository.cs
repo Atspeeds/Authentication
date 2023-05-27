@@ -8,6 +8,6 @@ namespace StoreManager.Domain.InventoryAgg
     {
         List<InventoryViewModel> Search(SearchInventory search);
         EditInventory Details(long id);
-
+        List<OprationViewModel> ShowLog(long id);
     }
 }

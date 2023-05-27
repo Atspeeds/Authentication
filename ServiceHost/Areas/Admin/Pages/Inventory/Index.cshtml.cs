@@ -96,6 +96,11 @@ namespace ServiceHost.Areas.Admin.Pages.Inventor
         }
 
 
+        public IActionResult OnGetInventoryLog(long id)
+        {
+            var Model = _inventoryApplication.ShowInventoryLog(id);
+            return Partial("./InventoryLog", Model);
+        }
 
     }
 }

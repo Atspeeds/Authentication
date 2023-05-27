@@ -11,6 +11,7 @@ namespace StoreManager.Application.Contract.Inventory
         ActionResponse Increase(IncreaseInventory command);
         ActionResponse Decrease(DecreaseInventory command);
         EditInventory GetDetails(long id);
+        List<OprationViewModel> ShowInventoryLog(long id);
         long CurrentCount(long id);
        
     }

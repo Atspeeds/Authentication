@@ -1,4 +1,5 @@
-﻿using _01_Framework.Infrastrue;
+﻿using _01_Framework.Application;
+using _01_Framework.Infrastrue;
 using Microsoft.EntityFrameworkCore;
 using StoreManager.Application.Contract.Inventory;
 using StoreManager.Domain.InventoryAgg;
@@ -10,7 +11,7 @@ namespace StoreManager.Infrastrue.EFCore.Repository
     public class InventoryRepository : RepositoryBase<long, Inventory>, INventoryRepository
     {
         private readonly ShopContext _shopContext;
-
+        
         public InventoryRepository(ShopContext context) : base(context)
         {
             _shopContext = context;
@@ -47,6 +48,25 @@ namespace StoreManager.Infrastrue.EFCore.Repository
 
             return query.OrderByDescending(x => x.Id).ToList();
 
+        }
+
+        public List<OprationViewModel> ShowLog(long id)
+        {
+            var result = _shopContext.Inventories
+                  .Where(x => x.Id == id)
+                  .SelectMany(o => o.Oprations)
+                   .Select(x => new OprationViewModel
+                   {
+                       id=x.Id,
+                       Character = x.Character,
+                       Description = x.Description,
+                       ServiceInput = x.ServiceInput,
+                       CreationDate=x.CreationDate.ToFarsi(),
+                       Count=x.Count,
+                       CurrentCount=x.CourrentCount,
+                   }).ToList();
+
+            return result;
         }
     }
 }

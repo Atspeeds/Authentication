@@ -97,3 +97,4 @@ C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Are
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Index.cshtml.g.cs
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Increase.cshtml.g.cs
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Decrease.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\InventoryLog.cshtml.g.cs
