@@ -98,3 +98,15 @@ C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Are
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Increase.cshtml.g.cs
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Decrease.cshtml.g.cs
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\InventoryLog.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Application.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Infrastrue.Configuration.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Infrastrue.EfCore.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Infrastrue.Configuration.pdb
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Application.pdb
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Infrastrue.EfCore.pdb
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\User\Create.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\User\Index.cshtml.g.cs

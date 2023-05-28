@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Infrastrue.Configuration\AccountManagement.Infrastrue.Configuration.csproj" />
     <ProjectReference Include="..\StoreManager.Infrastrue.Configurations\StoreManager.Infrastrue.Configurations.csproj" />
   </ItemGroup>
 

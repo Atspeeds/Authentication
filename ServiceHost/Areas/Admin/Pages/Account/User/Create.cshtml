@@ -1,0 +1,60 @@
+﻿@model AccountManagement.Application.Contract.User.CreateUser
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">افزودن کاربر جدید</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Create"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label">نام کامل</label>
+                    <input type="text" class="form-control" asp-for="FullName" onchange="makeSlug('Name', 'Slug')">
+                    <ul class="parsley-errors-list filled" id="parsley-id-32">
+                        <li class="parsley-required">
+                            <span asp-validation-for="FullName"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label">نلم کاربری</label>
+                    <input type="text" class="form-control" asp-for="UserName">
+                    <ul class="parsley-errors-list filled" id="parsley-id-32">
+                        <li class="parsley-required">
+                            <span asp-validation-for="UserName"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Passwoard" class="control-label">رمز عبور</label>
+                    <input type="password" class="form-control" asp-for="Passwoard">
+                    <ul class="parsley-errors-list filled" id="parsley-id-32">
+                        <li class="parsley-required">
+                            <span asp-validation-for="Passwoard"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">افزودن</button>
+    </div>
+</form>
