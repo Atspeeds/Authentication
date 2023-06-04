@@ -33,15 +33,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AM-Application", "AM-Applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AM-Infrastrue", "AM-Infrastrue", "{FC34B083-D826-4FD2-B7B2-29018347D5D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Domain", "AccountManagement.Domain\AccountManagement.Domain.csproj", "{16D2A18A-C8DF-4224-9C07-B2AC768F9C62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Domain", "AccountManagement.Domain\AccountManagement.Domain.csproj", "{16D2A18A-C8DF-4224-9C07-B2AC768F9C62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Application.Contract", "AccountManagement.Application.Contract\AccountManagement.Application.Contract.csproj", "{E2F9C6ED-AF53-4FD6-BC41-E2B55A907E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Application.Contract", "AccountManagement.Application.Contract\AccountManagement.Application.Contract.csproj", "{E2F9C6ED-AF53-4FD6-BC41-E2B55A907E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Application", "AccountManagement.Application\AccountManagement.Application.csproj", "{F276A6AB-3451-4D7A-9108-8C1A12EDFA87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Application", "AccountManagement.Application\AccountManagement.Application.csproj", "{F276A6AB-3451-4D7A-9108-8C1A12EDFA87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Infrastrue.EfCore", "AccountManagement.Infrastrue.EfCore\AccountManagement.Infrastrue.EfCore.csproj", "{EFBA1CA3-1A9B-4B24-B09A-61BB37B30606}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastrue.EfCore", "AccountManagement.Infrastrue.EfCore\AccountManagement.Infrastrue.EfCore.csproj", "{EFBA1CA3-1A9B-4B24-B09A-61BB37B30606}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Infrastrue.Configuration", "AccountManagement.Infrastrue.Configuration\AccountManagement.Infrastrue.Configuration.csproj", "{7AFCD02D-CF45-4A2B-A5DA-4725C13339F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastrue.Configuration", "AccountManagement.Infrastrue.Configuration\AccountManagement.Infrastrue.Configuration.csproj", "{7AFCD02D-CF45-4A2B-A5DA-4725C13339F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

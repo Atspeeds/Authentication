@@ -40,7 +40,7 @@ namespace ServiceHost
             services.AddTransient<IFileUploader, FileUplouder>();
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IPasswordHasher, PasswordHasher>();
-
+            services.AddTransient<NamePermissions>();
             services.AddHttpContextAccessor();
 
             //Cookie

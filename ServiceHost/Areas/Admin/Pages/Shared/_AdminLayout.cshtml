@@ -21,7 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="~/AdminThem/css/style.css" rel="stylesheet">
     <link href="~/AdminThem/css/style-responsive.css" rel="stylesheet" />
-
+    @RenderSection("Css", required: false)
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
       <script src="~/AdminThem/js/html5shiv.js"></script>
@@ -307,7 +307,8 @@
                         </a>
                         <ul class="sub">
                             <li><a class="" asp-page="/Account/User/Index">کاربران</a></li>
-                            
+                            <li><a class="" asp-page="/Account/Role/Index">نقش ها</a></li>
+
                         </ul>
                     </li>
                    
@@ -365,7 +366,7 @@
     <script src="~/adminthem/js/partialmodal.js"></script>
 
 
-
+    @RenderSection("scripts", required: false)
 
 
     <script>

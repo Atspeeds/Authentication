@@ -110,3 +110,15 @@ C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountMa
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\AccountManagement.Infrastrue.EfCore.pdb
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\User\Create.cshtml.g.cs
 C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\User\Index.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\Role\Index.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Account\Role\Create.cshtml.g.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\A\source\repos\AuthenticationApp\ServiceHost\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

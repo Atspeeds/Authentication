@@ -1,8 +1,11 @@
-﻿namespace AccountManagement.Application.Contract.Role
+﻿using System.Collections.Generic;
+
+namespace AccountManagement.Application.Contract.Role
 {
     public class PermissionViewModel
     {
-        public string Access { get; set; }
+        public List<string> Permission { get; set; }
+        public string Name { get; set; }
         public long RoleId { get; set; }
     }
 }

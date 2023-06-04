@@ -3,6 +3,7 @@ using AccountManagement.Application.Contract.Role;
 using AccountManagement.Domain.RoleAgg;
 using System;
 using System.Collections.Generic;
+using System.Security.Permissions;
 
 namespace AccountManagement.Application
 {
@@ -11,9 +12,12 @@ namespace AccountManagement.Application
 
         private readonly IRoleRepository _roleRepository;
 
-        public RoleApplication(IRoleRepository roleRepository)
+        private readonly NamePermissions _namePermissions;
+
+        public RoleApplication(IRoleRepository roleRepository,NamePermissions namePermissions)
         {
             _roleRepository = roleRepository;
+            _namePermissions = namePermissions;
         }
 
         public ActionResponse Create(CreateRole command)
@@ -23,8 +27,17 @@ namespace AccountManagement.Application
             if (_roleRepository.Exists(x => x.Name == command.Name))
                 return response.Failed(ServiceMessage.DuplicateRecord);
 
+            var PermissionsName = _namePermissions.GetAcces(command.permissions);
 
-            var role = new Role(command.Name, new List<Permission>());
+            var permission=new List<Permission>();
+
+            foreach (var item in command.permissions)
+            {
+                permission.Add(new Permission(PermissionsName,item));
+            }
+
+
+            var role = new Role(command.Name, permission);
 
             _roleRepository.Create(role);
 
@@ -41,7 +54,7 @@ namespace AccountManagement.Application
 
         public List<RoleViewModel> Search(SearchRole search)
         {
-            throw new NotImplementedException();
+            return _roleRepository.Search(search);
         }
     }
 }

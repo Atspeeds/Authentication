@@ -82,7 +82,7 @@ namespace AccountManagement.Infrastrue.EfCore.Migrations
                                 .HasColumnType("bigint")
                                 .UseIdentityColumn();
 
-                            b1.Property<string>("Access")
+                            b1.Property<string>("Name")
                                 .HasMaxLength(500)
                                 .HasColumnType("nvarchar(500)");
 
